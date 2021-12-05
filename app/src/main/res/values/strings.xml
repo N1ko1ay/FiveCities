@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FiveCities</string>
+    <string name="name">name</string>
+    <string name="pop">pop</string>
 </resources>

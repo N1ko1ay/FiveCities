@@ -13,12 +13,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val cityList = listOf<City>(
+            City("Arroyo", 7),
+            City("Broken Hills", 5),
+            City("Gecko", 45),
+            City("Ghost Farm", 3),
+            City("Klamath", 21)
+        )
 
-
-        userRecyclerView = findViewById(R.id.user_recycler_view)
+        userRecyclerView = findViewById(R.id.city_recycler_view)
         userRecyclerView.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        userRecyclerView.adapter = CityAdapter()
+        userRecyclerView.adapter = CityAdapter(cityList)
 
     }
 
