@@ -7,11 +7,13 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/name_text_view"
         android:text="@string/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
+        android:id="@+id/pop_text_view"
         android:text="@string/pop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
