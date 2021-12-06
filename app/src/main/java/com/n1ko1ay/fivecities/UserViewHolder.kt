@@ -2,6 +2,7 @@ package com.n1ko1ay.fivecities
 
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -13,6 +14,10 @@ class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(city: City) {
         nameTextView.text="Название:  ${city.name}"
         popTextView.text="Численность населения: ${city.pop}"
+
+        itemView.setOnClickListener {
+            Toast.makeText(itemView.context,city.name,Toast.LENGTH_LONG).show()
+        }
     }
 
 }
